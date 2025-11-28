@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Contact - Hadia Rani</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@wght@400;700&family=Poppins:wght@300;400;500&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #faf6f2; color: #333; line-height: 1.6; }
+
+        header { background: #8B4513; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: white; font-weight: 700; }
+        .nav-links { list-style: none; display: flex; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: all 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #FFDAB9; text-decoration: underline; }
+
+        main { margin-top: 100px; max-width: 1100px; margin-left: auto; margin-right: auto; padding: 2rem; }
+
+        .projects-section, .contact { margin: 4rem 0; padding: 3rem; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(139,69,19,0.1); }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #8B4513; text-align: center; margin-bottom: 2rem; }
+
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .project-card { background: #faf6f2; padding: 2rem; border-radius: 12px; border-left: 6px solid #A0522D; transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .project-card h3 { color: #8B4513; margin-bottom: 1rem; }
+
+        .contact-info { list-style: none; text-align: center; font-size: 1.1rem; }
+        .contact-info li { margin: 1rem 0; color: #555; }
+
+        footer { text-align: center; padding: 2rem; background: #8B4513; color: white; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Hadia Rani</div>
+            <ul class="nav-links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Scratch Game</h3>
+                    <p>A fun interactive maze game created using Scratch programming with animated characters and challenges.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Business Portfolio (Canva)</h3>
+                    <p>Designed a complete professional business portfolio for a startup idea using Canva with modern layouts.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Personal CV Design</h3>
+                    <p>Created an elegant and eye-catching resume using Canva Pro — perfect for internships.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>I'm always excited to connect!</p>
+            <ul class="contact-info">
+                <li>Email: (your email here)</li>
+                <li>University: Kinnaird College for Women University</li>
+                <li>Program: BS Computer Science – Semester 1</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>© 2025 Hadia Rani | Made with ♡ using HTML & CSS</footer>
+</body>
+</html>
